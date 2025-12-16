@@ -25,6 +25,9 @@ jobs:
       - name: Setup Rust
         uses: dtolnay/rust-toolchain@stable
 
+      - name: Install Windows bundling tools
+        run: choco install nsis wixtoolset --no-progress
+
       - name: Install dependencies
         run: npm ci
 
