@@ -6,12 +6,12 @@ Pomodoro-based productivity desktop app built with **Tauri + Rust + React**.
 
 Download the latest Windows installer from **GitHub Releases**:
 
-- `Focus Timer_..._x64-setup.exe` (recommended)
-- `Focus Timer_..._x64_en-US.msi`
+- **Windows (recommended):** [Download FocusTimer-setup.exe](../../../releases/latest/download/FocusTimer-setup.exe)
+- **Windows (MSI):** [Download FocusTimer.msi](../../../releases/latest/download/FocusTimer.msi)
 
 Releases page:
 
-`https://github.com/<YOUR_GITHUB_USERNAME>/<YOUR_REPO>/releases`
+[Latest release](../../../releases/latest)
 
 ## Features
 

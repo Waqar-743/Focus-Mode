@@ -34,9 +34,24 @@ jobs:
       - name: Build (Tauri)
         run: npm run tauri build
 
+      - name: Prepare stable installer filenames
+        shell: pwsh
+        run: |
+          New-Item -ItemType Directory -Force -Path release-artifacts | Out-Null
+
+          $exe = Get-ChildItem "src-tauri/target/release/bundle/nsis" -Filter "*setup*.exe" | Select-Object -First 1
+          if (-not $exe) { throw "NSIS setup exe not found" }
+          Copy-Item $exe.FullName "release-artifacts/FocusTimer-setup.exe" -Force
+
+          $msi = Get-ChildItem "src-tauri/target/release/bundle/msi" -Filter "*.msi" | Select-Object -First 1
+          if (-not $msi) { throw "MSI not found" }
+          Copy-Item $msi.FullName "release-artifacts/FocusTimer.msi" -Force
+
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
         with:
           files: |
+            release-artifacts/FocusTimer-setup.exe
+            release-artifacts/FocusTimer.msi
             src-tauri/target/release/bundle/**/*.msi
             src-tauri/target/release/bundle/**/*setup*.exe
