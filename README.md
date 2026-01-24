@@ -4,14 +4,14 @@ Pomodoro-based productivity desktop app built with **Tauri + Rust + React**.
 
 ## Download
 
-Download the latest Windows installer from **GitHub Releases**:
+Download the latest Windows installer (v1.0.2) from **GitHub Releases**:
 
-- **Windows (recommended):** [Download FocusTimer-setup.exe](../../../releases/latest/download/FocusTimer-setup.exe)
-- **Windows (MSI):** [Download FocusTimer.msi](../../../releases/latest/download/FocusTimer.msi)
+- **Windows (recommended):** [Download FocusTimer-setup.exe](https://github.com/Waqar-743/Focus-Mode/releases/latest/download/FocusTimer-setup.exe)
+- **Windows (MSI):** [Download FocusTimer.msi](https://github.com/Waqar-743/Focus-Mode/releases/latest/download/FocusTimer.msi)
 
 Releases page:
 
-[Latest release](../../../releases/latest)
+[Latest release](https://github.com/Waqar-743/Focus-Mode/releases/latest)
 
 ## Features
 
